@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toStartOf="@+id/btnDelete">
+
+            <TextView
+                android:id="@+id/tvHistType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laptop"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHistPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1200.00"
+                android:textColor="#388E3C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHistDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHeader"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/btnDelete"
+            android:text="Apple MacBook Pro, 16GB RAM"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tvHistDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHistDetails"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="2024-03-20"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="#D32F2F" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

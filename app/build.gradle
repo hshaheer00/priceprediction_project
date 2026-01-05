@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    buildFeatures {
+      mlModelBinding true
+   }
+    namespace 'com.example.prctc'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.prctc"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+}
+
+
+    dependencies {
+        implementation libs.animated.vector.drawable
+        implementation 'com.google.ai.edge.litert:litert:1.4.0'
+        implementation 'com.google.ai.edge.litert:litert-support:1.4.0'
+        implementation 'com.google.ai.edge.litert:litert-api:1.4.0'
+        implementation 'com.google.ai.edge.litert:litert-metadata:1.4.0'
+        implementation libs.tensorflow.lite.support
+        implementation 'androidx.appcompat:appcompat:1.7.0'
+        implementation 'com.google.android.material:material:1.10.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+        implementation 'com.google.firebase:firebase-auth:22.1.0'
+        implementation 'com.google.firebase:firebase-database:20.3.0'
+        implementation platform('com.google.firebase:firebase-bom:32.7.0')
+        implementation 'com.google.firebase:firebase-auth'
+        implementation libs.activity
+    }
+configurations.all {
+    exclude group: 'org.tensorflow', module: 'tensorflow-lite'
+    exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
+    exclude group: 'org.tensorflow', module: 'tensorflow-lite-support'
+    exclude group: 'org.tensorflow', module: 'tensorflow-lite-metadata'
+}
+
+
+
+
+

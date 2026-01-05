@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_laptop"
+            android:icon="@drawable/ic_laptop"
+            android:title="Laptop" />
+        <item
+            android:id="@+id/nav_mobile"
+            android:icon="@drawable/ic_mobile"
+            android:title="Mobile" />
+        <item
+            android:id="@+id/nav_tablet"
+            android:icon="@drawable/ic_tablet"
+            android:title="Tablet" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="History" />
+    </group>
+</menu>

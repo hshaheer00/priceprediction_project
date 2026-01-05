@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605895551142",
+    "project_id": "prctc-5b113",
+    "storage_bucket": "prctc-5b113.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605895551142:android:3e8507e4f296c739aaac67",
+        "android_client_info": {
+          "package_name": "com.example.prctc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBtzeH04oEY0tys2WvRUp43_69q6_kFWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

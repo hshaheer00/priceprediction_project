@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">prctc</string>
+    <string-array name="product_types">
+        <item>Laptop</item>
+        <item>Mobile</item>
+        <item>Tablet</item>
+    </string-array>
+</resources>
